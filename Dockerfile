@@ -12,7 +12,7 @@ RUN apt-get update\
     && apt-get install -y unzip\
     && apt-get install -y wget\
     && apt-get install -y curl\
-    && curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -\
+    && curl -sL https://deb.nodesource.com/setup_13.x | bash -\
     && apt-get install -y nodejs\
     && apt-get install -y default-jre default-jdk\
     && apt-get install -y jq \

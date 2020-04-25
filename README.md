@@ -92,5 +92,5 @@ Simply removing content of docker host volume directory, download and extract ne
 # Disclaimer
 <b>
 Author Provides no warranty with this software and will not be responsible for any direct or indirect damage caused due to the usage of this tool.
-This project is built for both Educational purpose ONLY.
+This project is built for Educational purpose ONLY.
 </b>
