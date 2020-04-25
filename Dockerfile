@@ -17,4 +17,10 @@ RUN apt-get update\
     && apt-get install -y default-jre default-jdk\
     && apt-get install -y jq \
     && npm install pm2 -g
-    
+COPY entrypoint.sh ${SCRIPT_PATH}
+COPY update_user_pass.py ${SCRIPT_PATH}
+RUN chmod 755 ${SCRIPT_PATH}/entrypoint.sh
+RUN chmod 755 ${SCRIPT_PATH}/update_user_pass.py
+EXPOSE 22533/udp 22533/tcp
+ENTRYPOINT ["entrypoint.sh"]
+CMD ["/usr/sbin/named"]
